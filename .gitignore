@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+.env
+dist/
+build/
+.frame/
+frame-projects/
+client/dist
+client/node_modules
+server/node_modules

@@ -1,0 +1,15 @@
+{
+  "name": "frame-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "start": "concurrently --kill-others-on-fail \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+    "build": "node scripts/build.js",
+    "serve": "npm run serve --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
